@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-10-08T03:00:43+00:00",
+  "n": 6,
+  "backend": "prototype-embedding",
+  "outcome_counts": {
+    "escalate": 4,
+    "auto_reply": 2
+  },
+  "auto_rate": 0.3333333333333333,
+  "layer_latency_ms": {
+    "supervisor": {
+      "p50": 0.01,
+      "p95": 0.01,
+      "max": 0.01
+    },
+    "research": {
+      "p50": 395.515,
+      "p95": 12226.09,
+      "max": 12226.09
+    },
+    "resolution": {
+      "p50": 0.18,
+      "p95": 0.36,
+      "max": 0.36
+    },
+    "qa": {
+      "p50": 0.19,
+      "p95": 0.22,
+      "max": 0.22
+    },
+    "action": {
+      "p50": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "escalation": {
+      "p50": 1918.7350000000001,
+      "p95": 2450.92,
+      "max": 2450.92
+    },
+    "graph_ms": {
+      "p50": 2200.605,
+      "p95": 14677.56,
+      "max": 14677.56
+    },
+    "classify_ms": {
+      "p50": 147.65,
+      "p95": 168.68,
+      "max": 168.68
+    },
+    "e2e_ms": {
+      "p50": 2364.2200000000003,
+      "p95": 14827.06,
+      "max": 14827.06
+    }
+  },
+  "cost_usd": {
+    "mean": 4.666666666666667e-05,
+    "total": 0.00028000000000000003
+  },
+  "cost_table_note": "Estimates from eval/costs.py; local prototype/embedding costs are amortized estimates, Jev and LLM rates are published list prices."
+}

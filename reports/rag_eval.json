@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-10-08T02:56:58+00:00",
+  "k": 4,
+  "n_queries": 16,
+  "retrieval": [
+    {
+      "system": "dense-only",
+      "context_precision": 0.9895833333333334,
+      "context_recall": 1.0
+    },
+    {
+      "system": "hybrid (no rerank)",
+      "context_precision": 0.96875,
+      "context_recall": 0.96875
+    },
+    {
+      "system": "hybrid + cross-encoder rerank",
+      "context_precision": 0.96875,
+      "context_recall": 0.96875
+    }
+  ],
+  "generation": {
+    "faithfulness": 0.9114583333333334,
+    "answer_relevance": 0.6483007249959623
+  },
+  "divergences": [
+    {
+      "id": "q02",
+      "query": "Can I return a jacket on day 28 after delivery?",
+      "relevant": [
+        "refund-policy.md",
+        "returns-exchanges.md"
+      ],
+      "dense": [
+        "returns-exchanges.md",
+        "shipping-delivery.md",
+        "refund-policy.md"
+      ],
+      "hybrid": [
+        "returns-exchanges.md",
+        "shipping-delivery.md"
+      ]
+    }
+  ]
+}
