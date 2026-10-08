@@ -1,11 +1,35 @@
-.venv/
+# --- Python ---
 __pycache__/
 *.py[cod]
-.DS_Store
-.env
-*.key
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.log
 
+# --- Generated / regenerable data ---
 data/tickets.db
 index/
-
+.streamlit/secrets.toml
 .streamlit/
+
+# --- Secrets (never commit) ---
+.env
+.env.*
+*.key
+*.pem
+credentials*.json
+
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# --- Personal: interview prep, local only, never tracked ---
+INTERVIEW_PREP.md
