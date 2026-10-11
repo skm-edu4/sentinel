@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-10-08T02:56:03+00:00",
-  "n": 6,
+  "generated_at": "2026-10-11T11:50:13+00:00",
+  "n": 8,
   "policies": {
     "A: current supervisor": {
-      "auto_rate": 0.3333333333333333,
+      "auto_rate": 0.25,
       "unsafe_rate": 0.0,
       "routine_capture": 0.5,
-      "human_load": 4,
-      "mean_e2e_ms": 3296.3090281724967,
-      "mean_cost_usd": 4.666666666666667e-05
+      "human_load": 6,
+      "mean_e2e_ms": 1611.314296749697,
+      "mean_cost_usd": 5.000000000000001e-05
     },
     "B: always research path": {
-      "auto_rate": 0.3333333333333333,
+      "auto_rate": 0.25,
       "unsafe_rate": 0.0,
       "routine_capture": 0.5,
-      "human_load": 4,
-      "mean_e2e_ms": 1428.0599866688135,
-      "mean_cost_usd": 5.000000000000001e-05
+      "human_load": 6,
+      "mean_e2e_ms": 358.81248425016565,
+      "mean_cost_usd": 5.250000000000001e-05
     },
     "C: escalate all (human-only)": {
       "auto_rate": 0.0,
       "unsafe_rate": 0.0,
       "routine_capture": 0.0,
-      "human_load": 6,
-      "mean_e2e_ms": 112.37110416550422,
+      "human_load": 8,
+      "mean_e2e_ms": 107.24255225045454,
       "mean_cost_usd": 1e-05
     }
   }

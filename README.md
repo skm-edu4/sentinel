@@ -109,8 +109,10 @@ reports/    generated traces + metric JSON
 
 ## Known bottlenecks & next steps
 
-- Escalation latency ≈ 2.2s p50 from MCP spawn-per-call (3 calls) — fix:
-  persistent sessions per server (async loop + shared `ClientSession`).
+- MCP sessions are persistent (per-server actor task on a background event
+  loop): escalation p50 went 2.2s → 6.4ms and the 50-ticket sweep 195s → 28s.
+  Transport failures invalidate the session and transparently reconnect with
+  one retry; tool errors propagate immediately without retry.
 - Sentiment/urgency accuracy (50%) is the stand-in's ceiling; Jev calibration
   is the intended upgrade and the reason the backend interface exists.
 - Streamlit dashboard reads `reports/` — regenerate after each eval run.

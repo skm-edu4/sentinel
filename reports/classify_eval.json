@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T02:57:28+00:00",
+  "generated_at": "2026-10-11T11:49:34+00:00",
   "backends": [
     {
       "name": "prototype-embedding",
@@ -8,8 +8,8 @@
       "sentiment_acc": 0.5,
       "urgency_acc": 0.5,
       "auto_auc": 0.6133333333333333,
-      "latency_mean_ms": 113.95430084055988,
-      "latency_p95_ms": 122.80012499832083
+      "latency_mean_ms": 92.0549957201365,
+      "latency_p95_ms": 96.11950000180514
     }
   ]
 }

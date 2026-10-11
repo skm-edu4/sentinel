@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-08T03:00:43+00:00",
-  "n": 6,
+  "generated_at": "2026-10-11T11:48:06+00:00",
+  "n": 12,
   "backend": "prototype-embedding",
   "outcome_counts": {
-    "escalate": 4,
+    "escalate": 10,
     "auto_reply": 2
   },
-  "auto_rate": 0.3333333333333333,
+  "auto_rate": 0.16666666666666666,
   "layer_latency_ms": {
     "supervisor": {
-      "p50": 0.01,
+      "p50": 0.0,
       "p95": 0.01,
       "max": 0.01
     },
     "research": {
-      "p50": 395.515,
-      "p95": 12226.09,
-      "max": 12226.09
+      "p50": 192.575,
+      "p95": 9095.62,
+      "max": 9095.62
     },
     "resolution": {
-      "p50": 0.18,
-      "p95": 0.36,
-      "max": 0.36
+      "p50": 0.1,
+      "p95": 0.33,
+      "max": 0.33
     },
     "qa": {
-      "p50": 0.19,
-      "p95": 0.22,
-      "max": 0.22
+      "p50": 0.14,
+      "p95": 0.4,
+      "max": 0.4
     },
     "action": {
       "p50": 0.0,
-      "p95": 0.0,
-      "max": 0.0
+      "p95": 0,
+      "max": 0
     },
     "escalation": {
-      "p50": 1918.7350000000001,
-      "p95": 2450.92,
-      "max": 2450.92
+      "p50": 6.404999999999999,
+      "p95": 1183.51,
+      "max": 1183.51
     },
     "graph_ms": {
-      "p50": 2200.605,
-      "p95": 14677.56,
-      "max": 14677.56
+      "p50": 205.77499999999998,
+      "p95": 9109.3,
+      "max": 9109.3
     },
     "classify_ms": {
-      "p50": 147.65,
-      "p95": 168.68,
-      "max": 168.68
+      "p50": 113.985,
+      "p95": 278.8,
+      "max": 278.8
     },
     "e2e_ms": {
-      "p50": 2364.2200000000003,
-      "p95": 14827.06,
-      "max": 14827.06
+      "p50": 344.975,
+      "p95": 9228.14,
+      "max": 9228.14
     }
   },
   "cost_usd": {
-    "mean": 4.666666666666667e-05,
-    "total": 0.00028000000000000003
+    "mean": 5.166666666666667e-05,
+    "total": 0.00062
   },
   "cost_table_note": "Estimates from eval/costs.py; local prototype/embedding costs are amortized estimates, Jev and LLM rates are published list prices."
 }
